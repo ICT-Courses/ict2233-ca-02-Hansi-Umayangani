@@ -12,5 +12,19 @@ export default function ThemeDropdown() {
 
   if (!mounted) return null
 
-  return <div className="relative inline-block text-left"></div>
+  return (
+    <div className="relative inline-block text-left">
+        {/* Main button */}
+        <Button
+            variant="ghost"
+            size="sm"
+            onClick={() => setOpen(!open)}
+        >
+            {theme === "light" && <Sun className="h-5 w-5" />}
+            {theme === "dark" && <Moon className="h-5 w-5" />}
+            {theme === "system" && <Laptop className="h-5 w-5" />}
+            <span className="sr-only">Select theme</span>
+        </Button>
+    </div>
+  )
 }
