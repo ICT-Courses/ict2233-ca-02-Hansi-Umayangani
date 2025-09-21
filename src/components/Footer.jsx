@@ -87,7 +87,18 @@ export default function Footer() {
           </motion.div>
         </div>
 
-        </div>
+        {/* Bottom bar */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.3 }}
+          viewport={{ once: true }}
+          className="border-t-[0.5px] border-secondary/40 mt-12 pt-8 flex flex-col md:flex-row justify-center md:justify-between items-center text-center gap-4"
+        >
+          <p className="text-muted-foreground text-sm">
+            © {new Date().getFullYear()} Gimhani Hansika. All rights reserved.
+          </p>
+        </motion.div>
       </div>
     </footer>
   );
