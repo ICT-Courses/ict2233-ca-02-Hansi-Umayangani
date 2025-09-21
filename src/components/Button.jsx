@@ -4,8 +4,11 @@ import clsx from "clsx";
 function Button({ 
     children, 
     variant = "solid", 
+    size = "md",
     as = "button", 
-    ...props }) {
+    asChild =false,
+    ...props 
+}) {
   
     const base =
     "inline-flex items-center justify-center rounded-lg font-medium transition-colors focus:outline-none";

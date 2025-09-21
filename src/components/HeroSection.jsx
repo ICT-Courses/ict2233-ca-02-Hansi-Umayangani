@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import Button from "../components/Button";
 import { Download, Github, Linkedin, Mail, ArrowDown } from "lucide-react";
 
+
 export default function HeroSection() {
   const scrollToNext = () => {
     window.scrollTo({
@@ -130,7 +131,18 @@ export default function HeroSection() {
             className="absolute bottom-8 left-1/2 transform -translate-x-1/2"
             >
             <Button variant="ghost" onClick={scrollToNext}>
-                <ArrowDown className="h-5 w-5" />
+                <motion.div
+                animate={{ y: [0, 10, 0] }} // move down 10px and back
+                transition={{
+                    duration: 1,      // total duration of one bounce
+                    repeat: Infinity,  // loop forever
+                    ease: "easeInOut", // smooth bounce
+                }}
+                >
+                <ArrowDown className="h-5 w-5" 
+                style={{ stroke: "var(--foreground)" }}
+                />
+                </motion.div>
             </Button>
             </motion.div>
         </div>

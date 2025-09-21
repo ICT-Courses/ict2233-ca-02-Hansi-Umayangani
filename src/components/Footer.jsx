@@ -19,7 +19,7 @@ const quickLinks = [
 
 export default function Footer() {
   return (
-    <footer className="w-full relative z-20 bg-background/30 backdrop-blur-sm">
+    <footer className="w-full relative z-20 bg-transparent backdrop-blur-sm">
       <div className="container mx-auto px-4 py-16">
         <div className="grid md:grid-cols-3 lg:grid-cols-4 gap-y-8 md:gap-x-20 text-center md:text-left">
           {/* Brand */}
