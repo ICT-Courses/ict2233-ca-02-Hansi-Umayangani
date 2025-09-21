@@ -14,7 +14,7 @@ export default function Navbar() {
     const location = useLocation();
 
   return (
-    <nav className="sticky top-0 z-50 w-full border-secondary/20 bg-background/95 backdrop-blur">
+    <nav className="sticky top-0 z-20 w-full border-secondary/20 bg-background/95 backdrop-blur">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex h-16 items-center justify-between">
           <div className="flex items-center">
