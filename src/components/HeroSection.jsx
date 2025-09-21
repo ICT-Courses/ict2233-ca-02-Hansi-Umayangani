@@ -48,33 +48,50 @@ export default function HeroSection() {
             </motion.div>
 
             {/* Main Content */}
-          <motion.div
+            <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: 0.2 }}
+            >
+
+                <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6">
+                Hi, I'm{" "}
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">
+                    Gimhani Hansika
+                </span>
+                </h1>
+
+                <p className="text-xl md:text-2xl text-gray-300 mb-8 max-w-3xl mx-auto">
+                A passionate professional blending{" "}
+                <span className="text-primary font-semibold">Software Development</span>,{" "}
+                <span className="text-primary font-semibold">Project Management</span>,{" "}
+                <span className="text-primary font-semibold">Human Resources</span>, and{" "}
+                <span className="text-primary font-semibold">Creative Design</span> to craft impactful solutions.
+                </p>
+
+                <p className="text-lg text-gray-400 mb-12 max-w-2xl mx-auto">
+                I thrive on building meaningful user experiences, leading projects with clarity,
+                and combining technical expertise with human-centered thinking.
+                Always eager to learn, grow, and contribute to opportunities that make a real difference.
+                </p>
+            </motion.div>
+
+          {/* CTA Buttons */}
+            <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.2 }}
-          >
+            transition={{ duration: 0.5, delay: 0.4 }}
+            className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12"
+            >
+            <Button as="a" href="/projects">
+                View My Work
+            </Button>
 
-            <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6">
-              Hi, I'm{" "}
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">
-                Gimhani Hansika
-              </span>
-            </h1>
-
-            <p className="text-xl md:text-2xl text-gray-300 mb-8 max-w-3xl mx-auto">
-              A passionate professional blending{" "}
-              <span className="text-primary font-semibold">Software Development</span>,{" "}
-              <span className="text-primary font-semibold">Project Management</span>,{" "}
-              <span className="text-primary font-semibold">Human Resources</span>, and{" "}
-              <span className="text-primary font-semibold">Creative Design</span> to craft impactful solutions.
-            </p>
-
-            <p className="text-lg text-gray-400 mb-12 max-w-2xl mx-auto">
-              I thrive on building meaningful user experiences, leading projects with clarity,
-              and combining technical expertise with human-centered thinking.
-              Always eager to learn, grow, and contribute to opportunities that make a real difference.
-            </p>
-          </motion.div>
+            <Button variant="outline" as="a" href="/resume.pdf" download>
+                <Download className="mr-2 h-5 w-5" />
+                Download Resume
+            </Button>
+            </motion.div>
         </div>
       </div>
     </section>
