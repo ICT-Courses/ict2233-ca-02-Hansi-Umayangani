@@ -3,7 +3,7 @@ import Animated3DBackground from "../components/Animated3DBackground";
 
 const Home = () => {
   return (
-    <div className="flex flex-col">
+    <div className="relative w-full min-h-screen">
       <HeroSection />
     </div>
   );
