@@ -1,6 +1,8 @@
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls, Stars } from "@react-three/drei";
 import { motion } from "framer-motion";
+import Button from "../components/Button";
+import { Download, Github, Linkedin, Mail } from "lucide-react";
 
 export default function HeroSection() {
   const scrollToNext = () => {
@@ -91,6 +93,33 @@ export default function HeroSection() {
                 <Download className="mr-2 h-5 w-5" />
                 Download Resume
             </Button>
+            </motion.div>
+
+            {/* Social Links */}
+            <svg style={{ display: "none" }}>
+                <linearGradient id="social-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                    <stop offset="0%" stopColor="#01742d" />
+                    <stop offset="100%" stopColor="#84cc16" />
+                </linearGradient>
+            </svg>
+
+            <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: 0.6 }}
+                className="flex justify-center space-x-6 mb-16"
+            >
+                <Button variant="ghost" as="a" href="https://github.com/yourusername" target="_blank">
+                <Github className="h-6 w-6 text-tertiary"/>
+                </Button>
+
+                <Button variant="ghost" as="a" href="https://linkedin.com/in/yourusername" target="_blank">
+                <Linkedin className="h-6 w-6 text-tertiary" />
+                </Button>
+
+                <Button variant="ghost" as="a" href="/contact">
+                <Mail className="h-6 w-6 text-tertiary" />
+                </Button>
             </motion.div>
         </div>
       </div>
