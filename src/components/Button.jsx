@@ -23,6 +23,13 @@ function Button({
 
     const classes = clsx(base, variants[variant], sizes[size]);
 
+    if (asChild && React.isValidElement(children)) {
+    return React.cloneElement(children, {
+      className: clsx(children.props.className, classes),
+      ...props,
+    });
+  }
+
   return (
     <Comp className={classes} {...props}>
       {children}
