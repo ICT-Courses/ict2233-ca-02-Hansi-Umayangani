@@ -31,7 +31,7 @@ export default function Navbar() {
                   to={item.href}
                   className={`px-3 py-2 rounded-md text-sm md:text-lg font-medium transition-colors hover:text-primary ${
                     location.pathname === item.href
-                        ? "text-primary bg-primary/10"
+                        ? "text-[#E3F7A8] bg-primary/10"
                         : "text-foreground hover:bg-secondary/10"
                     }`}
                 >
