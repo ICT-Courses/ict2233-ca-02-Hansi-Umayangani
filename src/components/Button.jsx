@@ -1,3 +1,6 @@
+import React from "react";
+import clsx from "clsx";
+
 function Button({ 
     children, 
     variant = "solid", 
@@ -29,7 +32,7 @@ function Button({
   }
 
   const Comp = as === "a" ? "a" : "button";
-  
+
   return (
     <Comp className={classes} {...props}>
       {children}
