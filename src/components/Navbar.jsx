@@ -19,14 +19,16 @@ export default function Navbar() {
     <nav className="sticky top-0 z-20 w-full border-secondary/20 bg-background/95 backdrop-blur">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex h-16 items-center justify-between">
+          {/*Logo*/}
           <div className="flex items-center">
             <Link to="/" className="text-2xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
               Gimhani Hansika
             </Link>
           </div>
 
-          <div className="hidden md:block">
-            <div className="ml-10 flex items-baseline space-x-6">
+          {/* Desktop nav links */}
+          <div className="hidden md:flex items-center space-x-6">
+            <div className="flex items-baseline space-x-6">
               {navigation.map((item) => (
                 <Link
                   key={item.name}
@@ -41,6 +43,9 @@ export default function Navbar() {
                 </Link>
               ))}
             </div>
+          
+            {/* Theme toggle dropdown */}
+            <ThemeDropdown />
           </div>
 
           <div className="md:hidden">
