@@ -10,6 +10,11 @@ export default function ThemeDropdown() {
 
   useEffect(() => setMounted(true), [])
 
+  const handleSelect = (mode) => {
+  setTheme(mode)
+  setOpen(false)
+   }
+
   if (!mounted) return null
 
   return (
