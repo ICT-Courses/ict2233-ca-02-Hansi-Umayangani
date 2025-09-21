@@ -69,6 +69,24 @@ export default function Footer() {
               ))}
             </ul>
           </motion.div>
+
+          {/* Contact Info */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.2 }}
+            viewport={{ once: true }}
+            className="md:col-span-1"
+          >
+            <h4 className="font-semibold mb-4">Get In Touch</h4>
+            <div className="space-y-2 text-muted-foreground">
+              <p>Colombo, Sri Lanka</p>
+              <p>your@email.com</p>
+              <p>+94 71 234 5678</p>
+            </div>
+          </motion.div>
+        </div>
+
         </div>
       </div>
     </footer>
