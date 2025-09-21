@@ -48,10 +48,30 @@ export default function Navbar() {
             >
               {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
             </button>
-          </div>
-          
+          </div>      
         </div>
       </div>
+
+      {isOpen && (
+        <div className="md:hidden border-t bg-background">
+          <div className="px-4 pt-2 pb-3 space-y-2">
+            {navigation.map((item) => (
+              <Link
+                key={item.name}
+                to={item.href}
+                className={`block px-3 py-2 rounded-md text-base font-medium transition-colors ${
+                  location.pathname === item.href
+                    ? "text-primary bg-primary/10"
+                    : "text-foreground hover:bg-secondary/10 hover:text-primary"
+                }`}
+                onClick={() => setIsOpen(false)}
+              >
+                {item.name}
+              </Link>
+            ))}
+          </div>
+        </div>
+      )}
     </nav>
   );
 }
