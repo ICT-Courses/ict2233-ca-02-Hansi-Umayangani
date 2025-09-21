@@ -1,5 +1,6 @@
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls, Stars } from "@react-three/drei";
+import { motion } from "framer-motion";
 
 export default function HeroSection() {
   const scrollToNext = () => {
@@ -25,10 +26,26 @@ export default function HeroSection() {
         <OrbitControls enableZoom={false} autoRotate autoRotateSpeed={0.1} />
       </Canvas>
 
-      {/* Placeholder for content */}
+      {/* Foreground content */}
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-4xl mx-auto text-center text-white">
-          <h1 className="text-3xl font-bold">Hero Section</h1>
+            {/* Profile Image */}
+            <motion.div
+            initial={{ opacity: 0, scale: 0.5 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.5 }}
+            className="mb-8"
+            >
+            <div className="w-52 h-52 mx-auto rounded-full bg-gradient-to-br from-primary to-secondary p-1">
+                <div className="w-full h-full rounded-full bg-background flex items-center justify-center">
+                <img
+                    src="src/assets/Profile_Picture.JPG"
+                    alt="Gimhani Hansika"
+                    className="w-48 h-48 rounded-full object-cover"
+                />
+                </div>
+            </div>
+            </motion.div>
         </div>
       </div>
     </section>
