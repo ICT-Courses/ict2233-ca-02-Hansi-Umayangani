@@ -2,7 +2,7 @@ import { Canvas } from "@react-three/fiber";
 import { OrbitControls, Stars } from "@react-three/drei";
 import { motion } from "framer-motion";
 import Button from "../components/Button";
-import { Download, Github, Linkedin, Mail } from "lucide-react";
+import { Download, Github, Linkedin, Mail, ArrowDown } from "lucide-react";
 
 export default function HeroSection() {
   const scrollToNext = () => {
@@ -120,6 +120,18 @@ export default function HeroSection() {
                 <Button variant="ghost" as="a" href="/contact">
                 <Mail className="h-6 w-6 text-tertiary" />
                 </Button>
+            </motion.div>
+
+            {/* Scroll Indicator */}
+            <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.5, delay: 0.8 }}
+            className="absolute bottom-8 left-1/2 transform -translate-x-1/2"
+            >
+            <Button variant="ghost" onClick={scrollToNext}>
+                <ArrowDown className="h-5 w-5" />
+            </Button>
             </motion.div>
         </div>
       </div>
