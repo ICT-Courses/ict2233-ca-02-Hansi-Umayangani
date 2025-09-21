@@ -48,7 +48,8 @@ export default function Navbar() {
             <ThemeDropdown />
           </div>
 
-          <div className="md:hidden">
+          <div className="md:hidden flex items-center gap-2">
+            <ThemeDropdown/>
             <button
               onClick={() => setIsOpen(!isOpen)}
               className="p-2 rounded-md text-foreground hover:bg-secondary/10"
