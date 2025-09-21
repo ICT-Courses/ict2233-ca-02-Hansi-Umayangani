@@ -5,7 +5,7 @@ function Button({
     ...props }) {
   
     const base =
-    "inline-flex items-center justify-center rounded-lg font-medium transition-all focus:outline-none";
+    "inline-flex items-center justify-center rounded-lg font-medium transition-colors focus:outline-none";
   
     const variants = {
     solid: "bg-primary text-white hover:bg-primary/90",
