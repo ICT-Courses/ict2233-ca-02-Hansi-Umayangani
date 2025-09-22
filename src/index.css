@@ -2,13 +2,24 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Theme variables */
+/* Light mode theme variables */
 :root {
   --background: #000000;
   --foreground: #fdfdfd;
   --primary: #177439; 
   --secondary: #84cc16;
   --tertiary: #06d44bc7;
+  --nav-active: #177439;
+}
+
+/* Dark mode theme variables */
+.dark {
+  --background: #000000;   
+  --foreground: #fdfdfd;   
+  --primary: #22c55e; 
+  --secondary: #a3e635; 
+  --tertiary: #4ade80;
+  --nav-active: #E3F7A8;
 }
 
 body {
