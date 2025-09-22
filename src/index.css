@@ -10,6 +10,11 @@
   --secondary: #84cc16;
   --tertiary: #06d44bc7;
   --nav-active: #177439;
+
+  /* Hero text colors in light */
+  --hero-heading: #000000;
+  --hero-subheading: #333333;
+  --hero-paragraph: #555555;
 }
 
 /* Dark mode theme variables */
@@ -20,6 +25,11 @@
   --secondary: #a3e635; 
   --tertiary: #4ade80;
   --nav-active: #E3F7A8;
+
+  /* Hero text colors in dark */
+  --hero-heading: #ffffff;
+  --hero-subheading: #d1d5db;
+  --hero-paragraph: #9ca3af;
 }
 
 body {
