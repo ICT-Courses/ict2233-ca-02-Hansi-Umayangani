@@ -34,5 +34,5 @@ export default function useTheme() {
         applyTheme(mode)
     }
 
-  return { theme, setTheme }
+  return { theme, setTheme: handleSetTheme }
 }

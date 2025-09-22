@@ -1,20 +1,16 @@
 import { useState, useEffect } from "react"
 import { Sun, Moon, Laptop } from "lucide-react"
 import Button from "./Button"
+import useTheme from "../hooks/useTheme"
 
 export default function ThemeDropdown() {
   const { theme, setTheme } = useTheme()
   const [open, setOpen] = useState(false)
-  const [mounted, setMounted] = useState(false)
-
-  useEffect(() => setMounted(true), [])
 
   const handleSelect = (mode) => {
   setTheme(mode)
   setOpen(false)
    }
-
-  if (!mounted) return null
 
   return (
     <div className="relative inline-block text-left">
