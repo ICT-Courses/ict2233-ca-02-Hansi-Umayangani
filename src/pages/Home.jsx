@@ -1,9 +1,10 @@
-import { useTheme } from "../hooks/useTheme";
 import HeroSection from "../components/HeroSection";
 import Animated3DBackground from "../components/Animated3DBackground";
-import LightThemeBackground from "../components/LightThemeBackground";
+import LightThemeBackground from "../components/LightTheme3DBackground";
+import useTheme from "../hooks/useTheme";
 
 const Home = () => {
+  
   const { theme } = useTheme();
   
   return (
