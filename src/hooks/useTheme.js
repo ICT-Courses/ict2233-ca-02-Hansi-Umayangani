@@ -11,24 +11,28 @@ export default function useTheme() {
   }, [])
 
   const applyTheme = (mode) => {
-  if (mode === "dark") {
-    document.documentElement.classList.add("dark")
-    localStorage.setItem("theme", "dark")
-  } else if (mode === "light") {
-    document.documentElement.classList.remove("dark")
-    localStorage.setItem("theme", "light")
-  } else {
-    // System mode
-    const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches
-    if (prefersDark) {
-      document.documentElement.classList.add("dark")
+    if (mode === "dark") {
+        document.documentElement.classList.add("dark")
+        localStorage.setItem("theme", "dark")
+    } else if (mode === "light") {
+        document.documentElement.classList.remove("dark")
+        localStorage.setItem("theme", "light")
     } else {
-      document.documentElement.classList.remove("dark")
+        // System mode
+        const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches
+        if (prefersDark) {
+        document.documentElement.classList.add("dark")
+        } else {
+        document.documentElement.classList.remove("dark")
+        }
+        localStorage.setItem("theme", "system")
     }
-    localStorage.setItem("theme", "system")
-  }
-}
+    }
 
+    const handleSetTheme = (mode) => {
+        setTheme(mode)
+        applyTheme(mode)
+    }
 
   return { theme, setTheme }
 }
