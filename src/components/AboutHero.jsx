@@ -1,3 +1,10 @@
+"use client";
+
+import { motion } from "framer-motion";
+import profilePic from "../assets/Profile_Picture.JPG";
+import Button from "./Button";
+import { Download } from "lucide-react";
+
 export default function AboutHero() {
   return (
     <section className="py-20 bg-gradient-to-br from-[var(--primary)]/5 via-[var(--background)] to-[var(--secondary)]/5">
