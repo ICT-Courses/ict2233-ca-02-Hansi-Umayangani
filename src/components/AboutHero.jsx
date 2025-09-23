@@ -85,6 +85,25 @@ export default function AboutHero() {
             </div>
             </motion.div>
 
+            {/* CTA Buttons */}
+            <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.4 }}
+            className="flex flex-col sm:flex-row gap-4 justify-START items-center mb-12"
+            >
+            {/* "Say Hello" button */}
+            <Button as="a" href="/contact" variant="solid" size="md">
+                Say Hello
+            </Button>
+
+            {/* "Download Resume" button */}
+            <Button as="a" href="/resume.pdf" variant="outline" size="md" download>
+                <Download className="mr-2 h-5 w-5" />
+                Download CV
+            </Button>
+            </motion.div>
+
 
       </div>
     </section>
