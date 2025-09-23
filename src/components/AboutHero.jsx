@@ -8,7 +8,7 @@ import { Download } from "lucide-react";
 export default function AboutHero() {
   return (
     <section className="py-20 bg-gradient-to-br from-[var(--primary)]/5 via-[var(--background)] to-[var(--secondary)]/5">
-      <div className="max-w-6xl mx-auto px-4">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <motion.div
           initial={{ opacity: 0, y: 10 }}
@@ -39,7 +39,7 @@ export default function AboutHero() {
                 initial={{ opacity: 0, x: -20 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.6, delay: 0.1 }}
-                className="flex justify-center md:justify-center md:pl-1"
+                className="flex justify-center"
             >
                 <div className="rounded-3xl p-1 bg-gradient-to-tr from-[var(--primary)]/30 via-[var(--secondary)]/20 to-[var(--tertiary)]/25 shadow-lg">
                 <div className="bg-[var(--background)]/80 dark:bg-[var(--background)]/60 rounded-2xl p-4 backdrop-blur-md">
@@ -51,17 +51,16 @@ export default function AboutHero() {
                 </div>
                 </div>
             </motion.div>
-        </div>
 
         {/* Text blocks */}
           <motion.div
             initial={{ opacity: 0, x: 20 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="space-y-6 max-w-xl mx-auto md:mx-0"
+            className="space-y-6 max-w-xl mx-auto"
             >
             <div>
-                <h2 className="text-2xl font-semibold mb-2" style={{ color: "var(--hero-heading)" }}>
+                <h2 className="text-2xl font-semibold mb-4" style={{ color: "var(--hero-heading)" }}>
                 My Journey
                 </h2>
                 <p className="leading-relaxed" style={{ color: "var(--hero-paragraph)" }}>
@@ -90,7 +89,6 @@ export default function AboutHero() {
                 personal and professional endeavors.
                 </p>
             </div>
-            </motion.div>
 
             {/* CTA Buttons */}
             <motion.div
@@ -110,8 +108,8 @@ export default function AboutHero() {
                 Download CV
             </Button>
             </motion.div>
-
-
+        </motion.div>
+      </div>
       </div>
     </section>
   );
