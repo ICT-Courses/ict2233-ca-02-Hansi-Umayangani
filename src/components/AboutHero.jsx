@@ -33,7 +33,7 @@ export default function AboutHero() {
         </motion.div>
 
         {/* Content */}
-        <div className="grid md:grid-cols-2 gap-6 items-center">
+        <div className="grid md:grid-cols-2 gap-2 items-center">
             {/* Profile image card */}
             <motion.div
                 initial={{ opacity: 0, x: -20 }}
@@ -57,13 +57,13 @@ export default function AboutHero() {
             initial={{ opacity: 0, x: 20 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="space-y-6 max-w-xl mx-auto"
+            className="space-y-6 max-w-xl md:ml-auto md:mr-12"
             >
             <div>
                 <h2 className="text-2xl font-semibold mb-4" style={{ color: "var(--hero-heading)" }}>
                 My Journey
                 </h2>
-                <p className="leading-relaxed" style={{ color: "var(--hero-paragraph)" }}>
+                <p className="leading-relaxed text-justify" style={{ color: "var(--hero-paragraph)" }}>
                 With a foundation in both IT and HRM, equipped to understand technical systems 
                 and human dynamics, fostering a balanced approach to organizational growth and 
                 project success.
@@ -74,7 +74,7 @@ export default function AboutHero() {
                 <h3 className="text-lg font-medium mb-2" style={{ color: "var(--hero-subheading)" }}>
                 What Drives Me
                 </h3>
-                <p className="leading-relaxed" style={{ color: "var(--hero-paragraph)" }}>
+                <p className="leading-relaxed text-justify" style={{ color: "var(--hero-paragraph)" }}>
                 Dedicated to delivering efficient, human-centered solutions, fostering teamwork, and aligning projects 
                 with strategic goals while embracing continuous learning.
                 </p>
@@ -84,7 +84,7 @@ export default function AboutHero() {
                 <h3 className="text-lg font-medium mb-2" style={{ color: "var(--hero-subheading)" }}>
                 Beyond Code
                 </h3>
-                <p className="leading-relaxed" style={{ color: "var(--hero-paragraph)" }}>
+                <p className="leading-relaxed text-justify" style={{ color: "var(--hero-paragraph)" }}>
                 A passion for singing and performance adds creativity, confidence, and resilience, enhancing both 
                 personal and professional endeavors.
                 </p>

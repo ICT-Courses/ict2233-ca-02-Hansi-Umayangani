@@ -27,6 +27,7 @@ const tools = [
   "Visual Studio 2020",
   "VS Code",
   "Figma",
+  "Canva",
   "ClickUp",
   "MS Office",
 ]
