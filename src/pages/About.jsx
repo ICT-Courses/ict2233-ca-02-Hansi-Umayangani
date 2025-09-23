@@ -1,10 +1,12 @@
 import AboutHero from "../components/AboutHero";
+import { SkillsSection } from "../components/SkillsSection";
 
 export default function About() {
   return (
     <main className="flex flex-col">
       <AboutHero />
-      {/* Contents for SkillsSection, ExperienceSection, EducationSection */}
+      <SkillsSection />
+      {/* Contents for ExperienceSection, EducationSection */}
     </main>
   );
 }
