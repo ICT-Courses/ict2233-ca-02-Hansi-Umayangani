@@ -48,7 +48,47 @@ export function SkillsSection() {
             that enable seamless coordination of people, processes, and technology
           </p>
         </motion.div>
-      </div>
+
+      
+            {/* Technical Skills */}
+            <motion.div
+            initial={{ opacity: 0, x: -20 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6, delay: 0.2 }}
+            >
+            <div className="bg-white/80 dark:bg-gray-900 rounded-lg p-6 shadow-md">
+                <h3 className="text-2xl font-semibold mb-6">Technical Skills</h3>
+                <div className="space-y-4">
+                {technicalSkills.map((skill, idx) => (
+                    <div key={idx}>
+                    {/* Skill name + category badge on the same line */}
+                    <div className="flex items-center justify-between mb-1">
+                        <div className="flex items-center gap-2">
+                        <span className="font-medium">{skill.name}</span>
+                        <span className="inline-block px-2 py-0.5 text-xs font-semibold text-yellow-700 bg-[#FCE3BB] rounded-full">
+                            {skill.category}
+                        </span>
+                        </div>
+                        <span className="text-sm text-muted-foreground">{skill.level}%</span>
+                    </div>
+
+                    {/* Animated skill level bar */}
+                    <div className="w-full bg-gray-200 dark:bg-gray-700 h-2 rounded-full overflow-hidden">
+                        <motion.div
+                        className="h-2 rounded-full bg-[#84cc16]"
+                        initial={{ width: 0 }}
+                        whileInView={{ width: `${skill.level}%` }}
+                        transition={{ duration: 1, ease: "easeOut" }}
+                        viewport={{ once: true }}
+                        />
+                    </div>
+                    </div>
+                ))}
+                </div>
+            </div>
+            </motion.div>
+        </div>
     </section>
   )
 }
