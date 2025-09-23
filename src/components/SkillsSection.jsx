@@ -2,6 +2,35 @@
 
 import { motion } from "framer-motion"
 
+const technicalSkills = [
+  { name: "HTML", level: 85, category: "Frontend" },
+  { name: "CSS / Tailwind", level: 75, category: "Frontend" },
+  { name: "React", level: 70, category: "Frontend" },
+  { name: "Node.js", level: 70, category: "Backend" },
+  { name: "JavaScript", level: 80, category: "Language" },
+  { name: "C#", level: 80, category: "Language" },
+  { name: "Python", level: 75, category: "Language" },
+]
+
+const softSkills = [
+  "Teamwork",
+  "Problem Solving",
+  "Communication",
+  "Creativity",
+  "Adaptability",
+  "Human Resources Management",
+]
+
+const tools = [
+  "Git",
+  "GitHub",
+  "Visual Studio 2020",
+  "VS Code",
+  "Figma",
+  "ClickUp",
+  "MS Office",
+]
+
 export function SkillsSection() {
   return (
     <section className="py-20 bg-gradient-to-br from-secondary/5 via-background to-primary/5">
