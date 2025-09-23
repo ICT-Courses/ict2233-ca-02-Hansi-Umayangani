@@ -49,6 +49,7 @@ export function SkillsSection() {
           </p>
         </motion.div>
 
+            <div className="grid md:grid-cols-2 gap-12">
       
             {/* Technical Skills */}
             <motion.div
@@ -88,6 +89,45 @@ export function SkillsSection() {
                 </div>
             </div>
             </motion.div>
+
+            {/* Soft Skills & Tools */}
+            <motion.div
+                initial={{ opacity: 0, x: 20 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6, delay: 0.4 }}
+                className="space-y-6"
+            >
+                <div className="bg-white/80 dark:bg-gray-900/80 rounded-lg p-6 shadow-md">
+                <h3 className="text-xl font-semibold mb-4">Soft Skills</h3>
+                <div className="flex flex-wrap gap-2">
+                    {softSkills.map((skill, idx) => (
+                    <span
+                        key={idx}
+                        className="inline-block px-3 py-1 text-sm font-medium bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-100 rounded-full"
+                    >
+                        {skill}
+                    </span>
+                    ))}
+                </div>
+                </div>
+
+                <div className="bg-white/80 dark:bg-gray-900/80 rounded-lg p-6 shadow-md">
+                <h3 className="text-xl font-semibold mb-4">Tools & Platforms</h3>
+                <div className="flex flex-wrap gap-2">
+                    {tools.map((tool, idx) => (
+                    <span
+                        key={idx}
+                        className="inline-block px-3 py-1 text-sm font-medium bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-100 rounded-full"
+                    >
+                        {tool}
+                    </span>
+                    ))}
+                </div>
+                </div>
+            </motion.div>
+
+            </div>
         </div>
     </section>
   )
