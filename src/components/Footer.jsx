@@ -6,7 +6,6 @@ import Button from "./Button";
 const socialLinks = [
   { icon: Github, href: "https://github.com/yourusername", label: "GitHub" },
   { icon: Linkedin, href: "https://linkedin.com/in/yourprofile", label: "LinkedIn" },
-  { icon: Twitter, href: "https://twitter.com/yourprofile", label: "Twitter" },
   { icon: Mail, href: "mailto:your@email.com", label: "Email" },
 ];
 
