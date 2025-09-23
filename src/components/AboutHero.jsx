@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import profilePic from "../assets/Profile_Picture.JPG";
+import profilePic from "../assets/Profile_Picture02.JPG";
 import Button from "./Button";
 import { Download } from "lucide-react";
 
@@ -46,7 +46,7 @@ export default function AboutHero() {
                     <img
                     src={profilePic}
                     alt="Profile picture"
-                    className="w-72 h-72 md:w-80 md:h-80 object-cover rounded-xl shadow-inner"
+                    className="w-72  md:w-80 object-cover rounded-xl shadow-inner"
                     />
                 </div>
                 </div>
