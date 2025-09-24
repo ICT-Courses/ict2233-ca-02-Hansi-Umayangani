@@ -3,7 +3,7 @@ export const featuredProjects = [
     title: "Point of Sales System",
     description:
         "A desktop application for a small-scale aquarium business to manage sales, inventory, and customer records efficiently.",
-    image: "#", 
+    image: "src/assets/Projects_Snapshots/AquaPOS.png", 
     demoLink: "#",
     codeLink: "#",
     },
@@ -11,7 +11,7 @@ export const featuredProjects = [
     title: "Promotional Footwear Website",
     description:
         "A promotional website for a footwear business showcasing products and brand information without e-commerce functionality.",
-    image: "#", 
+    image: "src/assets/Projects_Snapshots/S&S_Footwear_Web.png", 
     demoLink: "#", 
     codeLink: "#",
     },
@@ -19,7 +19,7 @@ export const featuredProjects = [
     title: "Pawfect Home Pet Adoption Center",
     description:
         "A website for a pet adoption center, enabling users to view adoptable pets and learn about adoption procedures.",
-    image: "#", 
+    image: "src/assets/Projects_Snapshots/Pawfect_Home_Web.png", 
     demoLink: "#", 
     codeLink: "#", 
     },
@@ -27,7 +27,7 @@ export const featuredProjects = [
     title: "Personal Portfolio Website",
     description:
         "My personal portfolio showcasing my projects, skills, and experience in a modern and responsive design.",
-    image: "#", 
+    image: "src/assets/Projects_Snapshots/Portfolio.png", 
     demoLink: "#", 
     codeLink: "#", 
     }
