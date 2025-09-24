@@ -103,7 +103,7 @@ export default function AboutHero() {
             </Button>
 
             {/* "Download Resume" button */}
-            <Button as="a" href="/resume.pdf" variant="outline" size="md" download>
+            <Button as="a" href="/resume.pdf" variant="outline" size="md" download="Gimhani_Hansika_Resume.pdf" target="_blank">
                 <Download className="mr-2 h-5 w-5" />
                 Download CV
             </Button>

@@ -4,9 +4,9 @@ import { Github, Linkedin, Twitter, Mail } from "lucide-react";
 import Button from "./Button";
 
 const socialLinks = [
-  { icon: Github, href: "https://github.com/yourusername", label: "GitHub" },
-  { icon: Linkedin, href: "https://linkedin.com/in/yourprofile", label: "LinkedIn" },
-  { icon: Mail, href: "mailto:your@email.com", label: "Email" },
+  { icon: Github, href: "https://github.com/Hansi-Umayangani", label: "GitHub" },
+  { icon: Linkedin, href: "https://www.linkedin.com/in/gimhani-hansika-945292311", label: "LinkedIn" },
+  { icon: Mail, href: "mailto:gimhanihansika2020@gmail.com", label: "Email" },
 ];
 
 const quickLinks = [

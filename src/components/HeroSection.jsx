@@ -100,7 +100,7 @@ export default function HeroSection() {
                 View My Work
             </Button>
 
-            <Button variant="outline" as="a" href="/resume.pdf" download>
+            <Button variant="outline" as="a" href="/resume.pdf" size="md" download="Gimhani_Hansika_Resume.pdf" target="_blank">
                 <Download className="mr-2 h-5 w-5" />
                 Download Resume
             </Button>
@@ -120,15 +120,15 @@ export default function HeroSection() {
                 transition={{ duration: 0.5, delay: 0.6 }}
                 className="flex justify-center space-x-6 mb-16"
             >
-                <Button variant="ghost" as="a" href="https://github.com/yourusername" target="_blank">
+                <Button variant="ghost" as="a" href="https://github.com/Hansi-Umayangani" target="_blank">
                 <Github className="h-6 w-6 text-tertiary"/>
                 </Button>
 
-                <Button variant="ghost" as="a" href="https://linkedin.com/in/yourusername" target="_blank">
+                <Button variant="ghost" as="a" href="https://www.linkedin.com/in/gimhani-hansika-945292311" target="_blank">
                 <Linkedin className="h-6 w-6 text-tertiary" />
                 </Button>
 
-                <Button variant="ghost" as="a" href="/contact">
+                <Button variant="ghost" as="a" href="mailto:gimhanihansika2020@gmail.com">
                 <Mail className="h-6 w-6 text-tertiary" />
                 </Button>
             </motion.div>
