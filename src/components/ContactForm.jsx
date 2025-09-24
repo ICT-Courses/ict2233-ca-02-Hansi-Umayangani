@@ -145,9 +145,18 @@ export function ContactForm() {
             {errors.message && <p className="text-sm text-red-500">{errors.message}</p>}
           </div>
 
-          <Button type="submit" className="w-full flex items-center justify-center gap-2">
+          <Button type="submit" className="w-full flex items-center justify-center gap-2" disabled={isSubmitting}>
+            {isSubmitting ? (
+              <>
+                <Loader2 className="h-4 w-4 animate-spin" />
+                Sending...
+              </>
+            ) : (
+              <>
             <Send className="h-4 w-4" />
             Send Message
+            </>
+            )}
           </Button>
         </form>
       </div>
