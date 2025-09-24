@@ -77,6 +77,12 @@ export function EducationSection() {
             My academic path and achievements that shaped my knowledge and skills.
           </p>
         </motion.div>
+
+        {/* Timeline Container */}
+        <div className="relative max-w-4xl mx-auto">
+          {/* Vertical timeline line */}
+          <div className="absolute left-1/2 top-0 h-full w-1 -translate-x-1/2 bg-gray-300 dark:bg-gray-700"></div>
+        </div>
       </div>
     </section>
   )
