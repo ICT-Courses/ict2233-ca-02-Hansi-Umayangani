@@ -56,6 +56,24 @@ export function ExperienceSection() {
             A snapshot of professional experiences, creative contributions, and personal growth.
           </p>
         </motion.div>
+
+        {/* Cards Grid */}
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        {experiences.map((exp, idx) => (
+            <div key={idx} className="relative rounded-xl overflow-hidden shadow-lg">
+            <div
+                className="absolute inset-0 bg-cover bg-center"
+                style={{ backgroundImage: `url(${exp.bgImage})` }}
+            ></div>
+            <div className="absolute inset-0 bg-black/30 flex flex-col justify-center items-center text-center p-6">
+                <h3 className="text-xl font-bold text-white mb-3">{exp.role}</h3>
+                <p className="text-sm text-white opacity-90">{exp.caption}</p>
+            </div>
+            <div className="aspect-[4/3]"></div>
+            </div>
+        ))}
+        </div>
+
       </div>
     </section>
   )
