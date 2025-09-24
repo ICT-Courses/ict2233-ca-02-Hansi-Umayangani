@@ -14,6 +14,7 @@ export function ContactForm() {
   })
   const [errors, setErrors] = useState({})
   const [isSubmitting, setIsSubmitting] = useState(false)
+  const [toastMessage, setToastMessage] = useState("")
 
   const validateForm = () => {
   const newErrors = {}
@@ -84,6 +85,11 @@ export function ContactForm() {
       viewport={{ once: true }}
       className="relative"
     >
+        {toastMessage && (
+        <div className="absolute top-0 left-1/2 transform -translate-x-1/2 bg-green-500 text-white px-6 py-3 rounded-lg shadow-lg z-50">
+          {toastMessage}
+        </div>
+      )}
       <div className="bg-white dark:bg-gray-900 rounded-2xl shadow-lg p-6">
         <h3 className="text-2xl font-semibold mb-6">Send me a message</h3>
         <form className="space-y-6">
