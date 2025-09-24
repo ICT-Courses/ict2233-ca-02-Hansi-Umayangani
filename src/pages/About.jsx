@@ -1,6 +1,7 @@
 import AboutHero from "../components/AboutHero";
 import { SkillsSection } from "../components/SkillsSection";
 import { ExperienceSection } from "../components/ExperienceSection";
+import { EducationSection } from "../components/EducationSection";
 
 export default function About() {
   return (
@@ -8,7 +9,7 @@ export default function About() {
       <AboutHero />
       <SkillsSection />
       <ExperienceSection />
-      {/* Content for EducationSection */}
+      <EducationSection />
     </main>
   );
 }
