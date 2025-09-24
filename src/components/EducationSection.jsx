@@ -1,7 +1,7 @@
 "use client"
 
 import { motion } from "framer-motion"
-import { GraduationCap, BookOpen } from "lucide-react"
+import { GraduationCap, BookOpen, Calendar  } from "lucide-react"
 
 const educationData = [
   {
