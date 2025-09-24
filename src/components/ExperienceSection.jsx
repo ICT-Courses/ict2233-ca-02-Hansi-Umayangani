@@ -2,6 +2,43 @@
 
 import { motion } from "framer-motion"
 
+// Experience data
+const experiences = [
+  {
+    role: "Event & Project Management",
+    caption:
+      "Coordinating and organizing events, guiding project teams, managing documentation, and fostering leadership, teamwork, and effective communication across various student projects and workshops.",
+    bgImage: "src/assets/Experience_Cards/Evenet_Management.jpg",
+  },
+  {
+    role: "UI/UX Designer",
+    caption: "Designing modern, responsive interfaces and ensuring seamless user experiences.",
+    bgImage: "src/assets/Experience_Cards/UI-UX_Designer.jpg",
+  },
+  {
+    role: "Graphic Design",
+    caption: "Crafting creative visuals, posters, and digital content that bring ideas to life aesthetically.",
+    bgImage: "src/assets/Experience_Cards/Graphic_Designer.jpg",
+  },
+  {
+    role: "Full Stack Web Projects",
+    caption: "Developing websites and applications with modern tools while learning to balance frontend aesthetics and backend logic.",
+    bgImage: "src/assets/Experience_Cards/Programmer.jpg",
+  },
+  {
+    role: "Documentation & Research",
+    caption: "Preparing structured reports, research findings, and project documentation that meet professional standards.",
+    bgImage: "src/assets/Experience_Cards/Research-Documentation.jpg",
+  },
+  {
+    role: "Personal & Creative Growth",
+    caption:
+      "Exploring creativity beyond technology through music, performance, photography, design, and artistic expression, enhancing both personal and professional development.",
+    bgImage: "src/assets/Experience_Cards/Aesthatics.jpg",
+  },
+]
+
+
 export function ExperienceSection() {
   return (
     <section className="py-20 bg-gradient-to-br from-secondary/5 via-background to-primary/5">
