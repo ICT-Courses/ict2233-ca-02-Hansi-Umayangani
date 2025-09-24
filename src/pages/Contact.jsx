@@ -20,7 +20,14 @@ export default function Contact() {
             Get In Touch
           </h1>
 
-          {/* Paragraph */}
+          <p 
+            className="max-w-2xl mx-auto text-lg"
+            style={{ color: "var(--hero-paragraph)" }}
+          >
+            Let's discuss your next project or just say hello. I'm always excited to connect
+            with fellow developers and potential collaborators.
+          </p>
+
         </motion.div>
       </div>
     </section>
