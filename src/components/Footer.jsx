@@ -33,7 +33,7 @@ export default function Footer() {
               Gimhani Hansika
             </h3>
             <p className="text-muted-foreground leading-relaxed mb-6 max-w-md mx-auto md:mx-0">
-              Passionate about building modern, interactive, and visually appealing web experiences. Always learning, always creating.
+              A passionate professional blending Software Development, Project Management, Human Resources, and Creative Design to craft impactful solutions.
             </p>
             <div className="flex justify-center md:justify-start space-x-2">
               {socialLinks.map((social) => (
@@ -54,7 +54,7 @@ export default function Footer() {
             viewport={{ once: true }}
             className="md:col-span-1"
           >
-            <h4 className="font-semibold mb-4">Quick Links</h4>
+            <h4 className="font-semibold text-lg mb-4">Quick Links</h4>
             <ul className="space-y-2">
               {quickLinks.map((link) => (
                 <li key={link.name}>
@@ -77,11 +77,11 @@ export default function Footer() {
             viewport={{ once: true }}
             className="md:col-span-1"
           >
-            <h4 className="font-semibold mb-4">Get In Touch</h4>
+            <h4 className="font-semibold text-lg mb-4">Get In Touch</h4>
             <div className="space-y-2 text-muted-foreground">
               <p>Colombo, Sri Lanka</p>
-              <p>your@email.com</p>
-              <p>+94 71 234 5678</p>
+              <p>gimhanihansika2020@gmail.com</p>
+              <p>+94 78 6620118</p>
             </div>
           </motion.div>
         </div>
