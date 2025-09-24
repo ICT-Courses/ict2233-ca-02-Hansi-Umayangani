@@ -28,9 +28,8 @@ const contactMethods = [
 ]
 
 const socialLinks = [
-  { icon: Github, label: "GitHub", href: "https://github.com/alexjohnson", username: "@alexjohnson" },
-  { icon: Linkedin, label: "LinkedIn", href: "https://linkedin.com/in/alexjohnson", username: "Alex Johnson" },
-  { icon: Twitter, label: "Twitter", href: "https://twitter.com/alexjohnson", username: "@alexjohnson" },
+  { icon: Github, label: "GitHub", href: "https://github.com/Hansi-Umayangani", username: "@Hansi-Umayangani" },
+  { icon: Linkedin, label: "LinkedIn", href: "https://www.linkedin.com/in/gimhani-hansika-945292311", username: "Gimhani Hanssika" },
 ]
 
 export function ContactInfo() {
