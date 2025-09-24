@@ -12,7 +12,12 @@ export function ProjectsHero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
             >
-            {/* Heading and description */}
+            <h1 className="text-4xl md:text-5xl font-bold mb-6 text-[var(--hero-heading)]">
+                My Projects
+            </h1>
+            <p className="text-xl text-[var(--hero-paragraph)] max-w-2xl mx-auto">
+                A showcase of my work, from personal experiments to production applications.
+            </p>
             </motion.div>
         </div>
       </div>
