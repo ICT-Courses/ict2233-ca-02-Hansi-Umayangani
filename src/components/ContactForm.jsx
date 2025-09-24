@@ -13,6 +13,7 @@ export function ContactForm() {
     message: "",
   })
   const [errors, setErrors] = useState({})
+  const [isSubmitting, setIsSubmitting] = useState(false)
 
   const validateForm = () => {
   const newErrors = {}
@@ -32,7 +33,48 @@ export function ContactForm() {
   const handleInputChange = (e) => {
     const { name, value } = e.target
     setFormData((prev) => ({ ...prev, [name]: value }))
+    if (errors[name]) setErrors((prev) => ({ ...prev, [name]: undefined }))
   }
+
+  const handleSubmit = async (e) => {
+  e.preventDefault();
+  if (!validateForm()) return;
+  setIsSubmitting(true);
+
+  try {
+    console.log("Before API call");
+
+    // Realistic API call using fetch
+    const response = await fetch("https://jsonplaceholder.typicode.com/posts", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(formData),
+    });
+
+    if (!response.ok) throw new Error("Network response was not ok");
+
+    console.log("After API call");
+
+    setToastMessage("Message sent successfully! Thank you for reaching out.");
+
+    setTimeout(() => setToastMessage(""), 3000);
+
+    // Reset form
+    setFormData({ name: "", email: "", subject: "", message: "" });
+  } catch (error) {
+    console.error(error);
+    setToastMessage("Error sending message. Please try again later.");
+    setTimeout(() => setToastMessage(""), 3000);
+  } finally {
+    setIsSubmitting(false);
+  }
+};
+
+  const inputClass =
+    "w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary dark:bg-gray-900 dark:text-white"
+  const errorClass = "border-red-500"
 
   return (
     <motion.div
