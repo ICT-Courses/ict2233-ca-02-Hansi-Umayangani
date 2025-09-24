@@ -55,8 +55,9 @@ export function ContactForm() {
                 placeholder="Your full name"
                 value={formData.name}
                 onChange={handleInputChange}
-                className="w-full px-4 py-2 border rounded-lg dark:bg-gray-900 dark:text-white"
+                className={`${inputClass} ${errors.name ? errorClass : ""}`}
               />
+              {errors.name && <p className="text-sm text-red-500">{errors.name}</p>}
             </div>
 
             <div className="space-y-2">
@@ -68,8 +69,9 @@ export function ContactForm() {
                 placeholder="your.email@example.com"
                 value={formData.email}
                 onChange={handleInputChange}
-                className="w-full px-4 py-2 border rounded-lg dark:bg-gray-900 dark:text-white"
+                className={`${inputClass} ${errors.email ? errorClass : ""}`}
               />
+              {errors.email && <p className="text-sm text-red-500">{errors.email}</p>}
             </div>
           </div>
 
@@ -82,8 +84,9 @@ export function ContactForm() {
               placeholder="What's this about?"
               value={formData.subject}
               onChange={handleInputChange}
-              className="w-full px-4 py-2 border rounded-lg dark:bg-gray-900 dark:text-white"
+              className={`${inputClass} ${errors.subject ? errorClass : ""}`}
             />
+            {errors.subject && <p className="text-sm text-red-500">{errors.subject}</p>}
           </div>
 
           <div className="space-y-2">
@@ -95,8 +98,9 @@ export function ContactForm() {
               placeholder="Tell me about your project or just say hello..."
               value={formData.message}
               onChange={handleInputChange}
-              className="w-full px-4 py-2 border rounded-lg dark:bg-gray-900 dark:text-white"
+              className={`${inputClass} ${errors.message ? errorClass : ""}`}
             />
+            {errors.message && <p className="text-sm text-red-500">{errors.message}</p>}
           </div>
 
           <Button type="submit" className="w-full flex items-center justify-center gap-2">
