@@ -94,7 +94,7 @@ export function EducationSection() {
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.6, delay: index * 0.1 }}
-                className={`mb-12 flex w-full items-start relative ${
+                className={`mb-1 flex w-full items-start relative ${
                     isLeft ? "justify-start" : "justify-end"
                 }`}
                 >

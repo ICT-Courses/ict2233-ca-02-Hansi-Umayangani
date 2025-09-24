@@ -19,11 +19,11 @@ const DigitalParticles = () => {
   return (
     <Points ref={pointsRef} positions={particles} stride={3} frustumCulled>
       <PointMaterial 
-        color="#00ffcc" 
+        color="#20A612" 
         size={0.03} 
         sizeAttenuation 
         transparent 
-        opacity={0.8} 
+        opacity={0.9} 
       />
     </Points>
   );
