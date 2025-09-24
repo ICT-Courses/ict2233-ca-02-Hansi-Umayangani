@@ -12,7 +12,15 @@ export default function Contact() {
           transition={{ duration: 0.6 }}
           className="text-center"
         >
-          {/* Heading and paragraph */}
+
+          <h1 className="text-4xl md:text-5xl font-extrabold tracking-tight mb-3 
+               bg-gradient-to-r from-[var(--primary)] via-[var(--secondary)] to-[var(--tertiary)] 
+               bg-clip-text text-transparent"
+          >
+            Get In Touch
+          </h1>
+
+          {/* Paragraph */}
         </motion.div>
       </div>
     </section>
