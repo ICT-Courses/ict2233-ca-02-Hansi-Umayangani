@@ -16,5 +16,14 @@ export function ProjectCard({ project }) {
             className="w-full h-full object-contain"
             />
         </div>
+
+        {/* Project Details */}
+        <div className="p-6 flex flex-col flex-1">
+            <h3 className="text-xl font-semibold mb-2 text-[var(--hero-heading)]">
+                {project.title}
+            </h3>
+            <p className="text-[var(--hero-paragraph)] flex-1">{project.description}</p>
+        </div>
+
     </motion.div>
 }
