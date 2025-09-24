@@ -16,14 +16,6 @@ export const featuredProjects = [
     codeLink: "#",
     },
     {
-    title: "Pawfect Home Pet Adoption Center",
-    description:
-        "A website for a pet adoption center, enabling users to view adoptable pets and learn about adoption procedures.",
-    image: "src/assets/Projects_Snapshots/Pawfect_Home_Web.png", 
-    demoLink: "#", 
-    codeLink: "#", 
-    },
-    {
     title: "Personal Portfolio Website",
     description:
         "My personal portfolio showcasing my projects, skills, and experience in a modern and responsive design.",

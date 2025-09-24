@@ -12,7 +12,9 @@ export function ProjectsHero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
             >
-            <h1 className="text-4xl md:text-5xl font-bold mb-6 text-[var(--hero-heading)]">
+            <h1 className="text-4xl md:text-5xl font-extrabold tracking-tight mb-3 
+                       bg-gradient-to-r from-[var(--primary)] via-[var(--secondary)] to-[var(--tertiary)] 
+                       bg-clip-text text-transparent">
                 My Projects
             </h1>
             <p className="text-xl text-[var(--hero-paragraph)] max-w-2xl mx-auto">
