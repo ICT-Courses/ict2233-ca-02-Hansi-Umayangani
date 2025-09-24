@@ -1,6 +1,64 @@
 "use client"
 
 import { motion } from "framer-motion"
+import { GraduationCap, BookOpen } from "lucide-react"
+
+const educationData = [
+  {
+    institution: "University of Sri Jayawardhanapura, Sri Lanka",
+    degree: "BSc. (Hons) in Information Technology (Ongoing)",
+    period: "2024 - 2027",
+    details:
+      "Pursuing a degree in Information Technology with a focus on software development, problem solving, and innovative technologies.",
+    icon: GraduationCap,
+  },
+  {
+    institution: "Chartered Institute of Personnel Management (CIPM), Colombo 05",
+    degree: "Diploma in Human Resources Management (Ongoing)",
+    period: "2024 - Present",
+    details:
+      "Expanding knowledge in human resources, leadership, and organizational development.",
+    icon: GraduationCap,
+  },
+  {
+    institution: "Chartered Institute of Personnel Management (CIPM), Colombo 05",
+    degree: "Advanced Certificate in Human Resources Management",
+    period: "2023 - 2024",
+    details:
+      "Completed advanced training in HR strategies and professional practices.",
+    icon: GraduationCap,
+  },
+  {
+    institution: "BCI Campus, Negombo",
+    degree: "Aquinas Diploma in English & Literature",
+    period: "2023 - 2024",
+    details:
+      "Developed strong communication and analytical skills through studies in English language and literature.",
+    icon: GraduationCap,
+  },
+  {
+    institution: "IMBS Green Campus, Gampaha",
+    degree: "Diploma in Information & Communication Technology",
+    period: "2020 - 2021",
+    details:
+      "Studied ICT fundamentals including networking, hardware, and basic programming.",
+    icon: GraduationCap,
+  },
+  {
+    institution: "Devi Balika Vidyalaya, Colombo 08",
+    degree: "G.C.E. Advanced Level Examination",
+    period: "2020 - 2022",
+    details: "Completed A/L in Arts Stream with 3A's - Z Score: 1.8167.",
+    icon: BookOpen,
+  },
+  {
+    institution: "Gothami Balika Vidyalaya, Colombo 10",
+    degree: "G.C.E. Ordinary Level Examination",
+    period: "2014 - 2019",
+    details: "Successfully passed O/L with 9A's.",
+    icon: BookOpen,
+  },
+]
 
 export function EducationSection() {
   return (
