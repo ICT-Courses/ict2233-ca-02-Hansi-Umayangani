@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Light mode theme variables */
+:root {
+  --background: #ffffff;
+  --foreground: #000000;
+  --primary: #177439; 
+  --secondary: #84cc16;
+  --tertiary: #06d44bc7;
+  --nav-active: #177439;
+
+  /* Hero text colors in light */
+  --hero-heading: #000000;
+  --hero-subheading: #333333;
+  --hero-paragraph: #555555;
+}
+
+/* Dark mode theme variables */
+.dark {
+  --background: #000000;   
+  --foreground: #fdfdfd;   
+  --primary: #22c55e; 
+  --secondary: #a3e635; 
+  --tertiary: #4ade80;
+  --nav-active: #E3F7A8;
+
+  /* Hero text colors in dark */
+  --hero-heading: #ffffff;
+  --hero-subheading: #d1d5db;
+  --hero-paragraph: #9ca3af;
+}
+
+body {
+  @apply bg-[var(--background)] text-[var(--foreground)] antialiased;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
